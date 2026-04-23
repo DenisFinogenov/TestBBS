@@ -6,16 +6,16 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 public class BaseTest {
-    WebDriver driver;
+    public WebDriver driver;
 
     @BeforeMethod
     public void setup() {
-        WebDriver driver = new ChromeDriver();
+        driver = new ChromeDriver();
 
     }
 
     @AfterMethod
     public void close() {
-   driver.quit();
+        //driver.quit();
     }
 }
